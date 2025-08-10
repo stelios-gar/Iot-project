@@ -5,7 +5,7 @@ import jakarta.validation.constraints.PositiveOrZero;
 import java.time.LocalDateTime;
 
 
-public record TelemetryEntryDTO(
+public record TelemetryEntryDTOForUI(
         @NotNull Double temperature,
         @NotNull Double humidity,
         @NotNull LocalDateTime timestamp,
