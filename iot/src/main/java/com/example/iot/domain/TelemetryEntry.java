@@ -20,4 +20,8 @@ public class TelemetryEntry {
 
     private String networkType;
     private Double batteryLevel;
+
+    private String deviceId;      // the Arduino/ESP/RPi identity (not unique per reading)
+    @Column(unique = true)
+    private String externalId;    // correlation id per reading (UUID/ULID), UNIQUE
 }
